@@ -5,3 +5,17 @@
     --secondary: #404040;
     --accent: #92743f;
 }
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    list-style-type: none;
+}
+
