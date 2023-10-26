@@ -2,7 +2,7 @@
     --text: #050316;
     --background: #fbfbfe;
     --primary: #b4b7b7;
-    --secondary: #404040;
+    --secondary: 64, 64, 64;
     --accent: #92743f;
 }
 
@@ -16,7 +16,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: var(--background);
-	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .logo {
@@ -53,3 +53,25 @@ nav ul li a {
     font-size: 1rem;
 }
 
+
+/* Intro section */
+.intro {
+    width: 100%;
+    background-color: rgba(var(--secondary), 0.2);
+    padding: 4rem 2.5rem 4rem 2.5rem;
+}
+
+.intro h1 {
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.intro p {
+    width: 60%;
+    padding-top: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    color: var(--text);
+}
