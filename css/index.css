@@ -130,11 +130,12 @@ nav ul li a {
     grid-row: 1 / 3;
     margin: 2rem;
     position: relative;
-    transition: all 0.5s;
     width: 600px;
     max-width: 600px;
     height: 400px;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 .work .slide {
@@ -142,6 +143,13 @@ nav ul li a {
     width: 100%;
     max-width: 600px;
     height: 400px;
+    transition: all 0.5s;
+}
+
+.slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .btn {
@@ -171,7 +179,11 @@ nav ul li a {
     right: 2%;
 }
 
-
+#caption {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
 
 /* questions */
 .questions {
