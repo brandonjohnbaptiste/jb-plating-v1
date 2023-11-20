@@ -11,6 +11,19 @@
     padding: 0;
 }
 
+.divider {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+}
+
+.divider img {
+    object-fit: cover;
+    object-position: bottom;
+    height: 100%;
+    width: 100%;
+}
+
 /* Navigation */
 nav {
     background-color: var(--background);
@@ -104,17 +117,6 @@ nav ul li a {
     color: var(--accent);
 }
 
-.divider {
-    height: 300px;
-    width: 100%;
-    margin: 0;
-}
-
-#divider {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 
 /* work */
 .work {
