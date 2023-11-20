@@ -72,6 +72,11 @@ nav ul li a {
     font-size: 1rem;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
 
 /* Intro section */
 .intro {
@@ -269,4 +274,40 @@ nav ul li a {
 /* Footer */
 .footer {
     background-color: var(--primary);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    font-family: 'Lato', serif;
+    padding: 0  8rem;
+}
+.footer .contact-info {
+    margin: 1rem;
+}
+
+.footer .contact-info h2 {
+    color: var(--accent);
+}
+
+.footer .footer-logo {
+    grid-column: 2 / 3;
+    text-align: center;
+    place-self: center;
+}
+
+.footer-logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+.footer .hours {
+    grid-column: 3 / 4;
+    margin: 1rem;
+}
+
+.hours h2 {
+    color: var(--accent);
+}
+
+.hours ul {
+    list-style: none;
 }
