@@ -311,3 +311,66 @@ nav ul li a:hover {
 .hours ul {
     list-style: none;
 }
+
+/* Responsive layout */
+@media (max-width: 1280px) {
+    .nav-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .nav-content .logo {
+        grid-column: 2 / 4;
+    }
+
+    .nav-content .links {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 2.5rem 0;
+    }
+
+    .intro-info {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    .intro-info h1 {
+        font-size: 1.25rem;
+    }
+
+    .intro-info p {
+        font-size: 0.95rem;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-areas: ". silver jewellery judaica .";
+        padding: 2rem 0;
+    }
+
+    .services button {
+        margin: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    #silver {
+        grid-area: silver;
+    }
+
+    #jewellery {
+        grid-area: jewellery;
+    }
+
+    #judaica {
+        grid-area: judaica;
+    }
+}
