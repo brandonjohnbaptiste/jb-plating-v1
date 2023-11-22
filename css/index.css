@@ -12,6 +12,7 @@
     padding: 0;
     overscroll-behavior: none;
     overscroll-behavior-x: none;
+    overflow-x: hidden;
 }
 
 .divider {
@@ -82,7 +83,6 @@ nav ul li a:hover {
 
 /* Intro section */
 .intro {
-    width: 100%;
     background-color: rgba(var(--secondary), 0.2);
     padding: 8.5rem 0;
 }
