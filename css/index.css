@@ -345,7 +345,7 @@ nav ul li a:hover {
 
     .intro .intro-info {
         width: 90%;
-        margin-left: 2rem;
+        padding-left: 2rem;
     }
 
     .intro-info h1 {
