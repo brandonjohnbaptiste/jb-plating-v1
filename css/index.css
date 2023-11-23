@@ -17,6 +17,7 @@
     height: 325px;
     width: 100%;
     margin: 0;
+    overflow-y: hidden;
 }
 
 .divider img {
@@ -152,6 +153,7 @@ nav ul li a:hover {
     max-width: 600px;
     height: 400px;
     transition: all 0.5s;
+    overflow-y: hidden;
 }
 
 .slide img {
@@ -386,7 +388,12 @@ nav ul li a:hover {
     }
 
     .divider {
-        height: 150px;
+        height: 165px;
+    }
+
+    .divider img {
+        width: inherit;
+        height: inherit;
     }
 
     .work {
@@ -400,7 +407,7 @@ nav ul li a:hover {
     .work h1 {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         width: 100%;
         margin: 1rem;
         text-align: center;
@@ -408,7 +415,11 @@ nav ul li a:hover {
 
     .work .info {
         grid-column: 1 / 3;
-        grid-row: 2 / 3
+        grid-row: 2 / 3;
+    }
+
+    .work .info p {
+        font-size: 0.9rem;
     }
 
     .work .slider {
@@ -429,27 +440,42 @@ nav ul li a:hover {
     #caption {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
+        font-size: .9rem;
+        font-style: italic;
     }
 
     .questions {
         width: 100%;
-        margin: 0;
+        margin: 1.5rem 0;
         height: 100%;
         display: grid;
         place-items: center;
     }
 
     .questions h1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin: 1rem 0;
     }
 
     .questions details {
-        margin: 0;
-        padding: 0;
+        margin: 0.5rem;
+        width: 80%;
+    }
+
+    .questions details[open] {
+        width: 80%;
+        margin: 0 auto;
     }
 
     .questions details summary {
-        font-size: 1rem;
+        font-size: .9rem;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .questions details > p {
+        font-size: .8rem;
     }
 
 
@@ -457,11 +483,11 @@ nav ul li a:hover {
 
     .footer {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "contact"
-                             "hours"
-                             "logo";
+        grid-template-rows: 3fr 1fr 3fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hours contact"
+                             ". ."
+                             "logo logo";
         padding: 0;
         place-items: center;
     }
@@ -471,9 +497,17 @@ nav ul li a:hover {
         margin: 0;
     }
 
+    .footer .contact-info h2 {
+        font-size: 1.25rem;
+    }
+
     .footer .hours {
         margin: 0;
         grid-area: hours;
+    }
+
+    .footer .hours h2 {
+        font-size: 1.25rem;
     }
 
     .footer .footer-logo {
