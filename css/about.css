@@ -134,3 +134,81 @@ nav ul li a:hover {
 .hours ul {
     list-style: none;
 }
+
+@media (max-width: 1280px) {
+    .nav-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        place-items: center;
+    }
+
+    .nav-content .logo {
+        grid-column: 2 / 4;
+    }
+
+    .nav-content .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-content .links {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
+                             "hours hours"
+                             "contact contact"
+                             "logo logo";
+        padding: 0;
+        place-items: center;
+        color: var(--text);
+    }
+
+    .footer .contact-info {
+        grid-area: contact;
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+    .footer .contact-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer .contact-info p {
+        font-size: .9rem;
+    }
+
+    .footer .hours {
+        margin: 1rem 0;
+        grid-area: hours;
+        text-align: center;
+    }
+
+    .footer .hours h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer .hours ul li {
+        font-size: .9rem;
+    }
+
+    .footer .footer-logo {
+        grid-area: logo;
+        margin: 0;
+    }
+
+    .footer .footer-logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer .footer-logo p {
+        font-size: .8rem;
+    }
+}
