@@ -486,9 +486,9 @@ nav ul li a:hover {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 2fr 3fr;
         grid-template-areas:
-                             "logo logo"
+                             "hours hours"
                              "contact contact"
-                             "hours .";
+                             "logo logo";
         padding: 0;
         place-items: center;
     }
@@ -509,6 +509,7 @@ nav ul li a:hover {
     .footer .hours {
         margin: 0.4rem;
         grid-area: hours;
+        text-align: center;
     }
 
     .footer .hours h2 {
