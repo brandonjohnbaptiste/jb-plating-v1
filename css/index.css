@@ -491,11 +491,13 @@ nav ul li a:hover {
                              "logo logo";
         padding: 0;
         place-items: center;
+        color: var(--text);
     }
 
     .footer .contact-info {
         grid-area: contact;
-        margin: 0.4rem;
+        margin: 0 1rem;
+        text-align: center;
     }
 
     .footer .contact-info h2 {
