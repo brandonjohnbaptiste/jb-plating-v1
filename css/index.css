@@ -275,7 +275,7 @@ nav ul li a:hover {
 
 /* Footer */
 .footer {
-    background-color: var(--primary);
+    background-color: rgba(var(--secondary), 0.25);
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     font-family: 'Lato', serif;
