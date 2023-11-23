@@ -30,12 +30,16 @@ nav {
     padding: 2rem 0;
 }
 
-nav a {
+nav h1 {
     font-family: 'Playfair Display', serif;
     text-decoration: none;
     cursor: pointer;
     font-size: 1.8rem;
     color: var(--accent);
+}
+
+nav a {
+    text-decoration: none;
 }
 
 .nav-content .links {
@@ -147,7 +151,7 @@ nav ul li a:hover {
         grid-column: 2 / 4;
     }
 
-    .nav-content .logo a {
+    .nav-content .logo h1 {
         font-size: 1.5rem;
     }
 

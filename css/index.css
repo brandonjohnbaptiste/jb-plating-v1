@@ -50,6 +50,7 @@ nav h1 {
     color: var(--accent);
 }
 
+
 .nav-content .links {
     display: flex;
     align-items: center;
