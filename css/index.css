@@ -125,6 +125,11 @@ nav ul li a:hover {
     color: var(--accent);
 }
 
+.services button > a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
 
 /* work */
 .work {
