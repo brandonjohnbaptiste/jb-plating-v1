@@ -38,6 +38,12 @@ nav h1 {
     color: var(--accent);
 }
 
+nav p {
+    font-size: 1rem;
+    color: var(--text);
+    text-align: center;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -153,6 +159,10 @@ nav ul li a:hover {
 
     .nav-content .logo h1 {
         font-size: 1.5rem;
+    }
+
+    .nav-content .logo p {
+        font-size: 0.8rem;
     }
 
     .nav-content .links {
