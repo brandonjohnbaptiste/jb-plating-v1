@@ -251,6 +251,7 @@ nav ul li a:hover {
 
 .questions details > summary span {
     vertical-align: bottom;
+    overflow: hidden;
 }
 
 .questions details > summary p {
