@@ -185,6 +185,10 @@ nav ul li a:hover {
         font-size: 1.5rem;
     }
 
+    .nav-content .logo p {
+        font-size: 0.8rem;
+    }
+
     .nav-content .links {
         grid-column: 1 / 5;
         grid-row: 2 / 3;
