@@ -106,7 +106,6 @@ nav ul li a:hover {
     font-family: 'Lato', sans-serif;
     font-size: 1.15rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas: 'contact contact-img'
                          'hours-img hours';
     grid-gap: 1rem;
@@ -130,6 +129,8 @@ nav ul li a:hover {
 #open-hours {
     grid-area: hours;
 }
+
+
 
 .content img {
     height: 400px;
@@ -218,17 +219,28 @@ nav ul li a:hover {
 
     .content-wrap {
         width: 90%;
-        margin: 0 auto;
+        margin: 1rem auto;
+    }
+
+    .content {
+        grid-template-areas: 'hours contact'
+                             'hours-img contact-img';
+    }
+
+    .content img {
+        width: 225px;
+        height: 115px;
     }
 
 
     .content h2 {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .content p {
-        font-size: .9rem;
+        font-size: .8rem;
         width: 80%;
+        margin: 0.5rem 0;
     }
 
     .footer {
