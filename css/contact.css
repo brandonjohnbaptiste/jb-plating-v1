@@ -223,13 +223,15 @@ nav ul li a:hover {
     }
 
     .content {
-        grid-template-areas: 'hours contact'
-                             'hours-img contact-img';
+        grid-template-areas: 'hours hours'
+                             'contact contact';
+        width: 100%;
     }
 
     .content img {
-        width: 225px;
-        height: 115px;
+        width: 350px;
+        height: 200px;
+        grid-column: span 2;
     }
 
 
@@ -239,7 +241,6 @@ nav ul li a:hover {
 
     .content p {
         font-size: .8rem;
-        width: 80%;
         margin: 0.5rem 0;
     }
 
