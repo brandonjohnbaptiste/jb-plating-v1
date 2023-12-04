@@ -27,6 +27,10 @@
     width: 100%;
 }
 
+#first-slide {
+    z-index: 10;
+}
+
 /* Navigation */
 nav {
     background-color: var(--background);
@@ -165,8 +169,8 @@ nav ul li a:hover {
     width: 100%;
     max-width: 600px;
     height: 400px;
-    transition: all 0.5s;
     overflow-y: hidden;
+    transition: transform 0.5s;
 }
 
 .slide img {
@@ -188,6 +192,10 @@ nav ul li a:hover {
     font-size: 0.9rem;
 }
 
+.btn {
+    z-index: 99;
+}
+
 .btn:active {
     transform: scale(1.1);
 }
@@ -201,6 +209,7 @@ nav ul li a:hover {
     top: 45%;
     right: 2%;
 }
+
 
 #caption {
     grid-column: 2 / 3;

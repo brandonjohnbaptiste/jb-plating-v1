@@ -137,6 +137,7 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+
 /* Footer */
 .footer {
     background-color: rgba(var(--secondary), 0.25);
